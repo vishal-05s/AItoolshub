@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Toolshub - Discover the Best AI Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🤖 AI Toolshub</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Discover Amazing AI Tools</h1>
+            <p class="hero-subtitle">Your one-stop hub for the best AI tools to boost productivity, creativity, and learning</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for AI tools...">
+                <button onclick="searchTools()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterTools('all')">
+                    <span class="category-icon">🎯</span>
+                    <h3>All Tools</h3>
+                </div>
+                <div class="category-card" onclick="filterTools('writing')">
+                    <span class="category-icon">✍️</span>
+                    <h3>Writing</h3>
+                </div>
+                <div class="category-card" onclick="filterTools('design')">
+                    <span class="category-icon">🎨</span>
+                    <h3>Design</h3>
+                </div>
+                <div class="category-card" onclick="filterTools('coding')">
+                    <span class="category-icon">💻</span>
+                    <h3>Coding</h3>
+                </div>
+                <div class="category-card" onclick="filterTools('research')">
+                    <span class="category-icon">📚</span>
+                    <h3>Research</h3>
+                </div>
+                <div class="category-card" onclick="filterTools('productivity')">
+                    <span class="category-icon">⚡</span>
+                    <h3>Productivity</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Featured AI Tools</h2>
+            <div id="toolsGrid" class="tools-grid">
+                <!-- Tools will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About AI Toolshub</h2>
+            <p class="about-text">
+                AI Toolshub is your comprehensive directory for discovering and exploring the latest AI-powered tools. 
+                Whether you're a student, professional, or creative, we help you find the perfect AI tools to 
+                enhance your workflow and unlock new possibilities.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Toolshub. Empowering innovation with AI.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Toolshub Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Toolshub Admin Page</h1>
+    </header>
+    <main style="max-width:600px;margin:auto;">
+        <h2>Manage AI Tools</h2>
+        <form id="toolForm">
+            <input type="text" id="name" placeholder="Tool Name" required><br><br>
+            <input type="text" id="category" placeholder="Category" required><br><br>
+            <input type="text" id="icon" placeholder="Icon (emoji or text)" required><br><br>
+            <input type="text" id="description" placeholder="Description" required><br><br>
+            <input type="text" id="type" placeholder="Type (Free, Paid, Free & Paid)" required><br><br>
+            <input type="text" id="link" placeholder="Website Link" required><br><br>
+            <button type="submit">Add Tool</button>
+        </form>
+        <h3>Current Tools:</h3>
+        <ul id="toolsList"></ul>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>
